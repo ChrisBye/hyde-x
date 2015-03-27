@@ -14,6 +14,7 @@
       {{ range .Params.categories }}<a class="label" href="{{ $baseUrl }}/categories/{{ . | urlize }}">{{ . }}</a>{{ end }}
       {{ end }}</span>
       <p>{{ .Description }}</p>
+      <p>{{ .Summary }}</p>
       <a href="{{ .Permalink }}">Read On &rarr;</a>
     </div>
     {{ end }}
